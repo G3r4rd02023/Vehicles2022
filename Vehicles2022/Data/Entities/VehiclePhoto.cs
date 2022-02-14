@@ -19,8 +19,8 @@ namespace Vehicles2022.Data.Entities
         // TODO: Change the path when publish
         [Display(Name = "Foto")]
         public string ImageFullPath => string.IsNullOrEmpty(ImageUrl)
-            ? $"https://localhost:44378/images/noimage.png"
-             : $"https://localhost:44378{ImageUrl[1..]}";
+             ? $"https://localhost:44392/images/noimage.png"
+            : $"https://localhost:44392{ImageUrl[1..]}";
         //: $"https://workshopvehicles.azurewebsites.net{ImageUrl.Substring(1)}";
     }
 }

@@ -24,5 +24,16 @@ namespace Vehicles2022.Helpers
         Task CheckRoleAsync(string roleName);
 
         Task<User> AddUserAsync(AddUserViewModel model, string imageUrl, UserType userType);
+
+        Task<IdentityResult> UpdateUserAsync(User user);
+
+        Task<IdentityResult> ChangePasswordAsync(User user, string oldPassword, string newPassword);
+
+        Task<bool> IsUserInRoleAsync(User user, string roleName);
+
+        Task<User> GetUserAsync(Guid id);
+
+        Task<IdentityResult> DeleteUserAsync(User user);
+
     }
 }

@@ -32,6 +32,7 @@ namespace Vehicles2022
             services.AddScoped<IUserHelper, UserHelper>();
             services.AddScoped<ICombosHelper, CombosHelper>();
             services.AddScoped<IImageHelper, ImageHelper>();
+            services.AddScoped<IConverterHelper, ConverterHelper>();
             services.AddAuthentication();
             services.AddIdentity<User, IdentityRole>(x =>
             {
